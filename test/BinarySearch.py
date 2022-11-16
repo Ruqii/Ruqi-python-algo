@@ -324,9 +324,7 @@ test[7]
 # 2.we are looking for both the increasing order and the decreasing order
 
 def first_position(num,target):
-
     def condition(mid):
-
         if num[mid] == target:
             if mid-1 >= 0 and num[mid-1] == target:
                 return 'left'
@@ -339,9 +337,7 @@ def first_position(num,target):
     return binary_search(0, len(target)-1, condition)
 
 def last_position(num, target):
-
     def condition(mid):
-
         if num[mid] == target:
             if mid+1 <= len(num)-1 and num[mid+1] == target:
                 return 'right'
