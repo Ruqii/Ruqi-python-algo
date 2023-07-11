@@ -153,7 +153,7 @@ database.list_all()
 # list O(1)
 
 # how long each function might take if there are 100 million users
-%%time
+# %%time
 for i in range(10000000):
     j = i*i
 
